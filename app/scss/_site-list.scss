@@ -1,0 +1,20 @@
+.site-list {
+    
+    list-style: none;
+    display: flex;
+
+
+    &__item {
+        padding-top: 5px;
+        padding-bottom: 10px;
+        margin-left: 30px;
+        font-family: $font-header;
+        text-transform: uppercase;
+        color: #fff;
+
+        &--active {
+            display: block;
+            border-bottom: 2px solid #fff;
+        }
+    }
+}

@@ -1,0 +1,56 @@
+.first-screen {
+
+
+    &__wrapper {
+        position: relative;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: -121px;
+        margin-bottom: 90px;
+        z-index: -1;
+    }
+
+    &__info {
+        padding-top: 220px;
+        width: 720px;
+    }
+
+    &__header {
+        margin-bottom: 40px;
+        margin-left: 190px;
+        font-family: $font-header;
+        font-size: 60px;
+
+    }
+
+    &__slogan {
+        margin-bottom: 40px;
+        margin-left: 190px;
+        font-family: $font-header;
+        font-size: 20px;
+    }
+
+    &__button {
+        margin-left: 190px;
+        margin-bottom: 40px;
+    }
+
+    &__background {
+        width: 720px;
+        height: 696px;
+        background-image: url('../img/first-screen__background.jpg');
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        z-index: -2;
+    }
+
+    &__catenergy-image {
+        max-width: 552px;
+        position: absolute;
+        top: 142px;
+        left: calc(50% - 159px);
+        z-index: -1;
+
+    }
+}
