@@ -1,0 +1,100 @@
+.advantages {
+
+    &__wrapper {
+        width: calc(100% - 220px);
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+
+    &__header {
+        font-family: $font-header;
+        font-size: 60px;
+        margin-bottom: 70px;
+    }
+
+    &__list {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    &__item {
+        width: 245px;
+        position: relative;
+        margin-bottom: 70px;
+
+        &:nth-child(1)::after {
+            content: '1';
+            margin: 0;
+            padding: 0;
+
+            font-family: $font-header;
+            font-size: 281px;
+            line-height: 201px;
+            color: $grey-background;
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: -1;
+        }
+
+        &:nth-child(2)::after {
+            content: '2';
+            margin: 0;
+            padding: 0;
+
+            font-family: $font-header;
+            font-size: 281px;
+            line-height: 201px;
+            color: $grey-background;
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: -1;
+        }
+
+        &:nth-child(3)::after {
+            content: '3';
+            margin: 0;
+            padding: 0;
+
+            font-family: $font-header;
+            font-size: 281px;
+            line-height: 201px;
+            color: $grey-background;
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: -1;
+        }
+
+        &:nth-child(4)::after {
+            content: '4';
+            margin: 0;
+            padding: 0;
+
+            font-family: $font-header;
+            font-size: 281px;
+            line-height: 201px;
+            color: $grey-background;
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: -1;
+        }
+    }
+
+    &__image {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 30px;
+    }
+
+    &__description {
+        font-family: $font-info;
+        font-size: 16px;
+        line-height: 24px;
+        padding-bottom: 10px;
+    }
+}
