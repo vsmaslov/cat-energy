@@ -1,0 +1,18 @@
+.page-footer {
+    max-width: 100%;
+    background-color: $grey-background;
+
+    &__wrapper {
+        width: calc(100% - 220px);
+        margin: 0 auto;
+        padding: 64px 0;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__logo-text {
+        width: 128px;
+        height: 24px;
+    }
+
+}

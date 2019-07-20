@@ -1,0 +1,103 @@
+.scale {
+    display: flex;
+    justify-content: space-around;
+
+    &__before {
+        margin-top: 7px;
+        font-family: $font-header;
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+
+    &__after {
+        margin-top: 7px;
+        font-family: $font-header;
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+
+    &__range {
+        -webkit-appearance: none;
+        width: 430px;
+        margin: 17px 25px;
+        position: relative;
+
+    }
+
+    &__range::-webkit-slider-runnable-track {
+        width: 430px;
+        height: 6px;
+        cursor: pointer;
+        background: rgba(0, 0, 0, 0.15);
+        border-radius: 3px;
+    }
+
+    &__range::-webkit-slider-thumb {
+        box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.15);
+        border: 1px solid rgba(0, 0, 0, 0.15);
+        height: 34px;
+        width: 34px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.5);
+        cursor: pointer;
+        -webkit-appearance: none;
+        margin-top: -14px;
+        background-image: url(../img/slider-control.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+
+
+    }
+
+    &__range::-moz-range-track {
+        width: 430px;
+        height: 6px;
+        
+        cursor: pointer;
+        background: rgba(0, 0, 0, 0.15);
+        border-radius: 3px;
+    }
+
+    &__range::-moz-range-thumb {
+        box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.15);
+        border: 1px solid rgba(0, 0, 0, 0.15);
+        height: 34px;
+        width: 34px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.5);
+        background-image: url(../img/slider-control.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    &__range::-ms-track {
+        width: 430px;
+        height: 6px;
+        cursor: pointer;
+        background: transparent;
+        border-color: transparent;
+        color: transparent;
+    }
+
+    &__range::-ms-fill-lower {
+        background: rgba(0, 0, 0, 0.15);
+
+        border-radius: 0px;
+    }
+
+    &__range::-ms-fill-upper {
+        background: rgba(0, 0, 0, 0.15);
+        border-radius: 0px;
+    }
+
+    &__range::-ms-thumb {
+        box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.15);
+        border: 1px solid rgba(0, 0, 0, 0.15);
+        height: 34px;
+        width: 34px;
+        border-radius: 50%;
+        cursor: pointer;
+        background: rgba(255, 255, 255, 0.5);
+    }
+
+}

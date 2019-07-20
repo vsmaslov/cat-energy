@@ -1,0 +1,83 @@
+.example {
+  &__wrapper {
+    width: calc(100% - 220px);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+    &--grey {
+      width: 100%;
+      background-color: $grey-background;
+      padding-bottom: 70px;
+    }
+  }
+
+  &__header {
+    font-family: $font-header;
+    font-size: 60px;
+    margin-top: 0;
+    margin-bottom: 80px;
+  }
+
+  &__info {
+    width: 50%;
+    padding-top: 70px;
+  }
+
+  &__description {
+    width: 433px;
+    font-family: $font-info;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 70px;
+  }
+
+  &__parameter-wrap {
+    display: flex;
+    margin-bottom: 60px;
+  }
+
+  &__weight,
+  &__time {
+    margin-right: 45px;
+
+    border: 1px solid rgba(#000, 0.3);
+    border-radius: 3px;
+  }
+
+  &__before-after {
+    width: 50%;
+    position: relative;
+  }
+
+  &__before-after-image {
+    position: absolute;
+    top: -190px;
+    left: -55px;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__before {
+    width: 366px;
+    height: 517px;
+    background-image: url('../img/before.png');
+    background-repeat: no-repeat;
+    background-position: 0 20px;
+
+  }
+
+  &__after {
+    width: 272px;
+    height: 517px;
+    background-image: url('../img/after.png');
+    background-repeat: no-repeat;
+    background-position: -272px 0;
+  }
+
+  &__scale {
+    width: 100%;
+    margin-top: 380px;
+  }
+
+}
