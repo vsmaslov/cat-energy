@@ -21,3 +21,10 @@
       left: 20px;
     }
   }
+  @media screen and (max-width:$screen-tablet) {
+    .weight {
+      &__info {
+        background-color: #fff;
+      }
+    }
+  }

@@ -7,6 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap&subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/powerange.min.css">
   <link rel="stylesheet" href="./css/style.css">
   <title>Функциональное питание для котов</title>
 </head>
@@ -15,7 +16,7 @@
   <header class="page-header">
     <div class="page-header__wrapper">
       <a href="#" class="page-header__logo-link">
-        <img src="./img/logo.png" alt="Логотип" class="page-header__logo-desktop" />
+        <img src="./img/logo.png" alt="Логотип" class="page-header__logo-desktop page-header__logo-tablet" />
       </a>
 
       <div class="page-header__logo-mobil logo-mobil">
@@ -136,32 +137,36 @@
               При этом он не менял своих привычек и по-прежнему спит по 16 часов
               в день.
             </p>
-            <div class="example__parameter-wrap">
-              <div class="example__weight weight">
-                <p class="weight__amount">5 кг</p>
-                <span class="weight__info">снижение веса</span>
+            <div class="example__parameter-wrap-tablet">
+              <div class="example__parameter-wrap">
+                <div class="example__weight weight">
+                  <p class="weight__amount">5 кг</p>
+                  <span class="weight__info">снижение веса</span>
+                </div>
+                <div class="example__time time">
+                  <p class="time__amount">60 дней</p>
+                  <span class="time__info">затрачено времени</span>
+                </div>
               </div>
-              <div class="example__time time">
-                <p class="time__amount">60 дней</p>
-                <span class="time__info">затрачено времени</span>
+              <div class="example__outlay outlay">
+                <span class="outlay__info">Затраты на питание: </span>
+                <span class="outlay__price">15 000 руб.</span>
               </div>
-            </div>
-            <div class="example__outlay outlay">
-              <span class="outlay__info">Затраты на питание: </span>
-              <span class="outlay__price">15 000 руб.</span>
             </div>
           </div>
-          <div class="example__before-after">
-            <div class="example__before-after-image">
-              <div class="example__before">
+          <div class="example__before-after-tablet">
+            <div class="example__before-after">
+              <div class="example__before-after-image">
+                <div class="example__before">
+                </div>
+                <div class="example__after">
+                </div>
               </div>
-              <div class="example__after">
+              <div class="example__scale scale">
+                <span class="scale__before">Было</span>
+                <input type="text" class="scale__range" min="0" max="100" step="1" value="50" />
+                <span class="scale__after">Стало</span>
               </div>
-            </div>
-            <div class="example__scale scale">
-              <span class="scale__before">Было</span>
-              <input type="range" class="scale__range" min="0" max="100" step="1" value="50" />
-              <span class="scale__after">Стало</span>
             </div>
           </div>
         </div>
@@ -201,6 +206,9 @@
       </div>
     </div>
   </footer>
+
+  <script src="./js/powerange.min.js"></script>
+  <script src="./js/main.js"></script>
 </body>
 
 </html>

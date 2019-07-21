@@ -18,3 +18,15 @@
         display: none;
     }
 }
+
+@media screen and (max-width:$screen-tablet) {
+    .page-header {
+        &__wrapper {
+            width: calc(100% - 60px);
+        }
+
+        &__logo-tablet {
+            width: 173px;
+        }
+    }
+}

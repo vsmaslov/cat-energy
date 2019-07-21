@@ -24,6 +24,11 @@
             left: 0;
         }
 
+        &--vk:hover::before, &--vk:focus::before {
+            background-image: url('../img/vk-green.png');
+        }
+
+
         &--inst::before {
             content: '';
 
@@ -35,6 +40,9 @@
             position: absolute;
             top: 2px;
             left: 0;
+        }
+        &--inst:hover::before, &--inst:focus::before {
+            background-image: url('../img/insta-green.png');
         }
 
         &--fb::before {
@@ -49,5 +57,9 @@
             top: 0;
             left: 0;
         }
+        &--fb:hover::before, &--fb:focus::before  {
+            background-image: url('../img/fb-green.png');
+        }
+
     }
 }

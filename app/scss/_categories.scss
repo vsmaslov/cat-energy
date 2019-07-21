@@ -73,7 +73,66 @@
         padding-left: 52px;
     }
 
+    &__link {
+
+        &:hover .categories__arrow,
+        &:focus .categories__arrow {
+            width: 33px;
+        }
+    }
+
     &__arrow {
         margin-left: 40px;
+
+
+    }
+}
+
+@media screen and (max-width:$screen-tablet) {
+    .categories {
+        &__wrapper {
+            width: calc(100% - 60px);
+        }
+
+        &__item {
+            width: 100%;
+            margin-bottom: 30px;
+
+            &:first-child::before {
+                content: '';
+                width: 140px;
+                height: 194px;
+                background-image: url('../img/cat-slim-tablet.png');
+
+                top: 80px;
+                left: 67.4%
+
+            }
+
+            &:last-child::before {
+                content: '';
+                width: 268px;
+                height: 112px;
+                background-image: url('../img/cat-pro-tablet.png');
+
+                top: 135px;
+                left: 58%;
+            }
+        }
+
+        &__icon {
+            width: 200px;
+            height: 200px;
+            top: 90px;
+            left: 63%;
+        }
+        &__header {
+            margin-left: 52px;
+            margin-bottom: 25px;
+        }
+        &__description {
+            width: 65%;
+            margin-bottom: 50px
+        }
     }
 }

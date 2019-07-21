@@ -98,3 +98,21 @@
         padding-bottom: 10px;
     }
 }
+
+@media screen and (max-width:$screen-tablet) {
+    .advantages {
+
+        &__wrapper {
+            width: calc(100% - 60px);
+        }
+
+        &__header {
+            margin-top: 0;
+            margin-bottom: 40px;
+        }
+
+        &__list {
+            padding: 0;
+        }
+    }
+}

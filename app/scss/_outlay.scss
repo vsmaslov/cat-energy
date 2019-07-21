@@ -12,3 +12,16 @@
         text-transform: uppercase;
     }
 }
+@media screen and (max-width:$screen-tablet) {
+   .outlay {
+       &__info {
+           display: block;
+           margin-bottom: 10px;
+       }
+       &__price {
+           display: block;
+           margin: 0;
+           text-align: right;
+       }
+   } 
+}

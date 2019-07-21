@@ -1,22 +1,31 @@
 .time {
-    position: relative;
-    width: 162px;
-    &__amount {
-      margin: 0;
-      padding: 20px 0;
-      font-family: $font-header;
-      font-size: 30px;
-      text-align: center;
-      text-transform: uppercase;
-    }
-  
+  position: relative;
+  width: 162px;
+
+  &__amount {
+    margin: 0;
+    padding: 20px 0;
+    font-family: $font-header;
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__info {
+    padding: 0 10px;
+    font-family: $font-info;
+    font-size: 14px;
+    background-color: $grey-background;
+    position: absolute;
+    bottom: -6px;
+    left: 7px;
+  }
+}
+
+@media screen and (max-width:$screen-tablet) {
+  .time {
     &__info {
-      padding: 0 10px;
-      font-family: $font-info;
-      font-size: 14px;
-      background-color: $grey-background;
-      position: absolute;
-      bottom: -6px;
-      left: 7px;
+      background-color: #fff;
     }
   }
+}
